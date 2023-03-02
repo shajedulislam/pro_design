@@ -69,14 +69,3 @@ class  Home  extends  StatelessWidget {
 - For device orientation update use **ProDesign.orientation**. Landscape orientation will change **ProDesign.deviceType** value based on screen width.
 
   **Check [example](https://pub.dev/packages/pro_design/example) page for code examples**
-
-## Contributors
-
-**Muhammad Shajedul Islam** <br>
-www.shajedulislam.dev <br>
-info@shajedulislam.dev
-
-<br>
-
-**Fatima Mostafa** <br>
-the.fatimamostafa@gmail.com
