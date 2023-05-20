@@ -9,6 +9,7 @@ import 'values.dart';
 ///ProDesign will help you making responsive application in many ways!
 class ProDesign {
   static bool _init = false;
+  static late double adjustor;
   static late MediaQueryData _mediaQueryData;
   static late double screenWidth;
   static late double screenHeight;
@@ -53,7 +54,7 @@ class ProDesign {
       "\nYou must call ProDesign.init() and pass context in a Widget build() function and it should be inside a MaterialApp, Not Before MaterialApp.\n",
     );
     if (deviceType == ProDeviceType.mobile) {
-      return _blockSizeHorizontal * pt * 0.250;
+      return _blockSizeHorizontal * pt * adjustor;
     } else {
       return pt;
     }
@@ -73,8 +74,11 @@ class ProDesign {
   }
 
   /// You must call this function in a [ Widget build ] function and it should be inside [ MaterialApp ]. Not Before [ MaterialApp ].
-  static void init(BuildContext context) {
+  /// You have to pass context here.
+  /// Additionally you can pass adjustor value that will help to change the responsiveness ratio. Note: Default value is 0.277. Do not pass any value without understanding how it works.
+  static void init(BuildContext context, {double? adjustor}) {
     _init = true;
+    adjustor = adjustor ?? 0.277;
     _mediaQueryData = MediaQuery.of(context);
     screenWidth = _mediaQueryData.size.width;
     screenHeight = _mediaQueryData.size.height;
