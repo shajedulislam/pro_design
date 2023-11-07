@@ -4,8 +4,12 @@
 
 ## 0.0.2
 
-- ratio adjustor added
+- Ratio adjustor added
 
 ## 0.0.3
+
+- Adjustor bug fixed
+
+## 0.0.4
 
 - dart 3 support added
