@@ -13,3 +13,7 @@
 ## 0.0.4
 
 - dart 3 support added
+
+## 0.0.5
+
+- dart version update

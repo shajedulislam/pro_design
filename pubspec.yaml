@@ -1,10 +1,10 @@
 name: pro_design
 description: A Flutter package to develop responsive flutter applications easily in different ways. Try this and make your widgets and fonts responsive on any screen size.
-version: 0.0.4
+version: 0.0.5
 homepage:
 
 environment:
-  sdk: ">=2.19.2 <4.0.0"
+  sdk: ^3.5.3
   flutter: ">=3.0.0"
 
 dependencies:
@@ -14,4 +14,4 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^4.0.0
